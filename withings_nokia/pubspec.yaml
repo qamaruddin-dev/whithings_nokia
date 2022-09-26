@@ -1,6 +1,7 @@
 name: withings_nokia
-description: A new Flutter package project.
+description: A Flutter Package to Read Withings Health Data.
 version: 0.0.1
+author: Qamar Ud Din
 homepage:
 
 environment:
@@ -10,6 +11,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  dio: any
+  flutter_web_auth: any
+  shared_preferences: any
+  
 
 dev_dependencies:
   flutter_test:
