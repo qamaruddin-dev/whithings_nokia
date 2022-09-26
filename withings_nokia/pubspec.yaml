@@ -1,8 +1,7 @@
 name: withings_health
 description: A Flutter Package to Read Withings Health Data.
 version: 0.0.1
-author: Qamar Ud Din
-homepage:
+homepage: https://github.com/qamaruddin-dev/withings_nokia/tree/main/withings_nokia
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
