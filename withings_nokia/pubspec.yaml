@@ -10,9 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dio: any
-  flutter_web_auth: any
-  shared_preferences: any
+  dio: ^4.0.6
+  flutter_web_auth: ^0.4.1
+  shared_preferences: ^2.0.15
   
 
 dev_dependencies:
