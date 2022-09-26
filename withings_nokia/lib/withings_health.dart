@@ -1,4 +1,4 @@
-library withings_nokia;
+library withings_health;
 
 import 'package:shared_preferences/shared_preferences.dart';
 import 'constants/api_constants.dart';

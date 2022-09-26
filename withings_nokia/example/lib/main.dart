@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:withings_nokia/constants/api_constants.dart';
-import 'package:withings_nokia/models/withings_activity_model.dart';
-import 'package:withings_nokia/models/withings_sleep_model.dart';
-import 'package:withings_nokia/withings_nokia.dart';
+import 'package:withings_health/constants/api_constants.dart';
+import 'package:withings_health/models/withings_activity_model.dart';
+import 'package:withings_health/models/withings_sleep_model.dart';
+import 'package:withings_health/withings_health.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +30,6 @@ class WithingsHealthExample extends StatefulWidget {
 }
 
 class _WithingsHealthExampleState extends State<WithingsHealthExample> {
-  //Data Models for Activity and Sleep Data
   static const String withingClientID =
       'cf9b703fa359f61343d6bd5ca3fc8f14325064514a6200bdcca898e1866c6843';
 

@@ -1,4 +1,4 @@
-name: withings_nokia
+name: withings_health
 description: A Flutter Package to Read Withings Health Data.
 version: 0.0.1
 author: Qamar Ud Din
