@@ -14,7 +14,7 @@ import '../models/withings_sleep_model.dart';
 class WithingsHealth {
   String baseUrl = 'https://wbsapi.withings.net';
 
-  Future<String> WithingsLogin(
+  Future<String> withingsLogin(
       {required String withingsClientID,
       required String withingClientSecret,
       required String withingRedirectUri,
@@ -70,7 +70,7 @@ class WithingsHealth {
   }
 
 /****************************Get Data*************************/
-  Future<WithingsDataModel> GetWithingsActivityData(
+  Future<WithingsDataModel> getWithingsActivityData(
       {required String startDate, required String endDate}) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
 
@@ -105,7 +105,7 @@ class WithingsHealth {
       throw Exception("Error Fetching Data");
   }
 
-  Future<WithingsSleepData> GetWithingsSleepData(
+  Future<WithingsSleepData> getWithingsSleepData(
       {required String startDate, required String endDate}) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
 

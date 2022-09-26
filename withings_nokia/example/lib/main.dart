@@ -121,7 +121,7 @@ class _WithingsHealthExampleState extends State<WithingsHealthExample> {
           children: [
             ElevatedButton(
                 onPressed: () async {
-                  userId = await healthFactory.WithingsLogin(
+                  userId = await healthFactory.withingsLogin(
                       withingsClientID: withingClientID,
                       withingClientSecret: withingClientSecret,
                       withingRedirectUri: withingRedirectUri,
@@ -133,7 +133,7 @@ class _WithingsHealthExampleState extends State<WithingsHealthExample> {
             ElevatedButton(
                 onPressed: () async {
                   _withingActivityData =
-                      await healthFactory.GetWithingsActivityData(
+                      await healthFactory.getWithingsActivityData(
                           startDate: formattedDate, endDate: formattedDate);
                   setActivityData(_withingActivityData);
                 },
@@ -145,7 +145,7 @@ class _WithingsHealthExampleState extends State<WithingsHealthExample> {
             Divider(),
             ElevatedButton(
                 onPressed: () async {
-                  _withingSleepData = await healthFactory.GetWithingsSleepData(
+                  _withingSleepData = await healthFactory.getWithingsSleepData(
                       startDate: formattedDate, endDate: formattedDate);
                   setSleepData(_withingSleepData);
                 },
