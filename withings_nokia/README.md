@@ -192,9 +192,11 @@ Below is a simplified flow of how to use the plugin.
   late WithingsDataModel _withingActivityData;
   late WithingsSleepData _withingSleepData;
 
+  //startdate and enddate formatted in
+    var formatter = new DateFormat('yyyy-MM-dd');
 
-  //Sample to show activity data
-  _activityData.body!.activities!.forEach((element) {
+  setActivityData(WithingsDataModel _activityData) {
+    _activityData.body!.activities!.forEach((element) {
       calories = calories + element.calories!.toDouble();
 
       // Distance in Meters
@@ -207,11 +209,26 @@ Below is a simplified flow of how to use the plugin.
       stepCount = stepCount + element.steps!.toInt();
       floors = floors + element.elevation!.toInt();
       duration = duration + element.active!.toInt();
-      });
+    });
+    setState(() {
+      calories;
+      distance;
+      totalCalories;
+      stepCount;
+      floors;
+      duration;
+    });
+  }
 
-    // Sample to show Sleep Data
+    // Method to set Activity Data state
+    setSleepData(WithingsSleepData _sleepData) {
     _sleepData.body!.series!.forEach((element) {
       sleep = sleep + element.data!.asleepduration!.toInt();
       goalSleep = goalSleep + element.data!.durationtosleep!.toInt();
+      setState(() {
+        sleep;
+        goalSleep;
       });
+    });
+    }
 ```
